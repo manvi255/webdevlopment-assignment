@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dog Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      border-radius: 3px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      
+    }
+
+    .gallery img:hover {
+      border: 2px solid black;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🐾 Dog Gallery 🐾</h1>
+
+  <div class="gallery">
+    <img src="image.png" alt="Dog 1">
+    <img src="image.png" alt="Dog 2">
+    <img src="image.png" alt="Dog 3">
+    <img src="image.png" alt="Dog 4">
+    <img src="image.png" alt="Dog 5">
+    <img src="image.png" alt="Dog 6">
+    <img src="image.png" alt="Dog 7">
+    <img src="image.png" alt="Dog 8">
+    <img src="image.png" alt="Dog 9">
+  </div>
+
+</body>
+</html>

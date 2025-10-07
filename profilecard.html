@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <title>Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      overflow: hidden;
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px;
+    }
+
+    .card .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card .info h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card .info p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .card .info .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .card .info .buttons a {
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .card .info .buttons a:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        flex-direction: column;
+        width: 70vw;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+        margin: 20px 0 10px 0;
+      }
+
+      .card .info {
+        padding: 10px;
+      }
+
+      .card .info .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card .info .buttons a {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="profile" alt="Profile image of Manvi Gupta">
+    <div class="info">
+      <h2>Manvi Gupta</h2>
+      <p>1st Year Student at Scalar School of Technology. Loves writing poetry, travelling, and exploring new things.</p>
+      <div class="buttons">
+        <a href="#">Contact</a>
+        <a href="#">Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
